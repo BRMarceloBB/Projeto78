@@ -1,0 +1,12 @@
+body{
+    text-align:center;
+  background-color: greenyellow;
+background-repeat: no-repeat;
+  background-position: center center fixed
+  }  
+  
+  #album
+  {
+    width:450px;
+    border-radius:30px;
+  }

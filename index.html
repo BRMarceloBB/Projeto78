@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Álbum de Família</title>
+</head>
+<body>
+   
+
+    <h1>Álbum de Família</h1>
+    <p>Algumas pessoas que eu achei na internet :)</p>
+  
+  <img id="album" src="https://fotovisao.com.br/public/getProductImage/15168/2000/2000/94219?v=1.2020-12-15%2013:22:10">
+  <br><br>
+   <button onclick="proximoslide()"> Próximo </button>
+  
+   <p id="textomotivos"></p>
+    
+</body>
+<script>
+var motivos = [
+    "Mário Santos",
+    "Igor Santos",
+    "Nando Santos",
+    "Erica Santos",
+    "Carla Santos",
+    "Rafel Santos",
+    "Abraão Santos",
+    "Fernanda Santos",
+    "Thiago Santos",
+  ];
+  
+  var images = [
+    "https://imagens.brasil.elpais.com/resizer/AXY-znKLjN2eo__LAuOLMJSSPFA=/1960x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/6TE7TL7D4YWZFV2TFRSGNGN6JE.jpg",
+    "http://pm1.narvii.com/7358/23897f66e0e470720cc273a84f9ac8f58129ba46r1-256-256v2_00.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQguWN3aNoQDEzIpUc7aRRTE04i424oZu4KrQ&usqp=CAU",
+    "https://www.codigofonte.com.br/wp-content/uploads/2019/12/meme-chique.jpg",
+    "https://www.dicasdemulher.com.br/wp-content/uploads/2018/10/legendas-para-fotos-sorrindo-4.jpg",
+    "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3079244:1619797975/Juan-Joya-Borja.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=60ab5fd",
+    "https://img.r7.com/images/meme-sorriso-forcado-hide-the-pain-harold-maurice-andras-arato-08112019141226221",
+    "https://pbs.twimg.com/media/DwHF7TkWsAEPlQa.jpg",
+    "https://www.opovo.com.br/noticiasimages/app/noticia_146418291334/2018/01/16/343063/gordinho-da-ave-maria-meme.png"
+  ];
+  
+  var i = 0;
+  function proximoslide() {  
+      document.getElementById("textomotivos").innerHTML = motivos[i];
+      document.getElementById("album").src = images[i];
+      i++;
+
+    
+  }
+
+</script>
+</html>
